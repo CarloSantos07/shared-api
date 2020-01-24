@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_01_21_180736) do
 
   create_table "memberships", id: :string, limit: 36, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "google_user_id"
-    t.string "team_id", null: false
+    t.string "team_id"
     t.boolean "active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
